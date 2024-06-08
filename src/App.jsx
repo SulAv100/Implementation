@@ -1,3 +1,4 @@
+
 import NavBar from "./Components/NavBar/NavBar";
 import Slider from "./Components/Slider/Slider";
 import "./App.css";
@@ -11,16 +12,17 @@ import { useState } from "react";
 
 function App() {
   const [account, setAccount] = useState(false);
-
+  const [homepage, setHomepage] = useState(true);
+ 
   return (
     <>
       <div className="main-app-display">
-        <toggleContext.Provider value={{ account, setAccount }}>
+        <toggleContext.Provider value={{ setHomepage, setAccount }}>
           <NavBar />
           {account ? (
             <Account />
           ) : (
-            <>
+           <>
               <Slider />
               <Featured />
               <Product />
@@ -29,11 +31,23 @@ function App() {
           )}
           <Routes>
             <Route path="/login" element={<Account />} />
+            <Route path="/home"  element={<Slider/>} />
           </Routes>
         </toggleContext.Provider>
       </div>
     </>
   );
+}
+
+function Home(){
+  return(
+    <>
+      <Slider />
+              <Featured />
+              <Product />
+              <Brand />
+    </>
+  )
 }
 
 export default App;

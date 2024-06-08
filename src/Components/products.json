@@ -1,0 +1,36 @@
+{
+    "laptops":[
+        {
+            "image": "/assets/Products/product1.jpg",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+
+        },
+        {
+            "image": "/assets/Products/product2.jpg",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+        },
+        {
+            "image": "/assets/Products/product3.jpg",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+        },
+        {
+            "image": "/assets/Products/product4.jpg",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+        },
+        {
+            "image": "/assets/Products/product5.jpg",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+        },
+        {
+            "image": "/assets/Products/product6.png",
+            "description":"ACER SWIFT GO 14 OLED 2024 | Intel® Core™ Ultra 5 processor 125H |16GB LPDDR5X | 512GB PCIEe NVMe SSD | Intel® Arc™ Graphics | 14″2.8k OLED SCREEN | BACKLIT KEYBOARD | FINGERPRINT READER",
+            "price":"108000"
+        }
+        
+    ]
+}

@@ -4,11 +4,17 @@ import navIcon from '../../assets/iocn.png';
 import toggleContext from '../Context';
 
 function NavBar() {
-    const { account, setAccount } = useContext(toggleContext);
+    const { setHomepage, setAccount } = useContext(toggleContext);
 
     const handleAccountClick = () => {
         setAccount(true);
+        setHomepage(false);
     };
+
+    const handleHomepage = ()=>{
+        setAccount(false);
+        setHomepage(true);
+    }
 
     return (
         <header>
@@ -19,16 +25,12 @@ function NavBar() {
                             <img src={navIcon} alt="" />
                         </figure>
                     </li>
-                    <li>Home</li>
+                    <li onClick={handleHomepage} >Home</li>
                     <li>Accessories</li>
                     <li>Desktops</li>
                     <li>Laptops</li>
                     <li>Monitors</li>
-                    {account ? (
-                        <li>Account</li>
-                    ) : (
-                        <li onClick={handleAccountClick}>Account</li>
-                    )}
+                    <li onClick={handleAccountClick}>Account</li>
                     <li><input type="text" placeholder='Search' /></li>
                     <li><i className="fa-solid fa-cart-shopping"></i><sup id='item-represent'>0</sup></li>
                 </ul>

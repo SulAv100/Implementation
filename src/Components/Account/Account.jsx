@@ -1,6 +1,7 @@
 import React from 'react'
 import './Account.css'
 import {z} from 'zod'
+import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
@@ -15,6 +16,8 @@ function Account() {
         resolver: zodResolver(userSchemen),
     })
 
+    const navigate = useNavigate();
+
 
     const handleSubmission = (formData,event)=>{
         event.preventDefault();
@@ -26,7 +29,9 @@ function Account() {
                 'Content-Type':'application/json'
             },
             body:JSON.stringify(formData)
-        }).then((response)=> response.json()).then((data)=> console.log(data)).catch((error)=> console.log("AN error has occured",error))
+        }).then((response)=> response.json()).then((data)=> console.log(data)).catch((error)=> console.log("AN error has occured",error));
+
+        navigate('/');
     }
 
 
