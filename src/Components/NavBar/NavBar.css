@@ -1,0 +1,56 @@
+header{
+    position: sticky 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: rgb(129, 129, 129);
+    height: max-content;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+
+}
+nav{
+    padding: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li figure{
+    height: 40px;
+    width: 40px;
+}
+ul li figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+li input{
+    width: 200px;
+    height: 25px;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 14px;
+    outline: none;
+    color: black;
+    font-family: sans-serif;
+}
+.fa-cart-shopping{
+    font-size: 19px;
+}
+#item-represent{
+    position: relative;
+    top: -5px;
+    font-size: 14px;
+}
